@@ -1,0 +1,26 @@
+{
+	"name": "Null",
+	"description": "Hehe why",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": {
+			"16": "/images/lul.png",
+			"32": "/images/lul.png",
+			"48": "/images/lul.png",
+			"128": "/images/lul.png"
+		},
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "/images/lul.png",
+		"32": "/images/lul.png",
+		"48": "/images/lul.png",
+		"128": "/images/lul.png"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"tabs"
+	]
+}
