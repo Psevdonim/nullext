@@ -1,26 +1,32 @@
 {
-	"name": "Null",
-	"description": "Hehe why",
-	"version": "1.0",
-	"manifest_version": 3,
-	"action": {
-		"default_icon": {
-			"16": "/images/lul.png",
-			"32": "/images/lul.png",
-			"48": "/images/lul.png",
-			"128": "/images/lul.png"
-		},
-		"default_popup": "popup.html"
-	},
-	"icons": {
-		"16": "/images/lul.png",
-		"32": "/images/lul.png",
-		"48": "/images/lul.png",
-		"128": "/images/lul.png"
-	},
-	"permissions": [
-		"activeTab",
-		"scripting",
-		"tabs"
-	]
+    "manifest_version": 3,
+    "version": "1.1",
+    "name": "xyuma",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+
+    "commands": {
+        "send": {
+            "suggested_key": "Ctrl+Shift+P",
+            "description": "Send xyuma"
+        }
+    },
+    
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "tts"
+    ],
+
+    "host_permissions": [
+        "https://denis.qa/*"
+    ],
+
+    "background": {
+        "service_worker": "background.js"
+    }
 }
